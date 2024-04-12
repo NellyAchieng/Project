@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NELLY'S FRUITS MARKET</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>NELLY'S FRUITS MARKET</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Search button -->
+        <div>
+            <input type="text" id="searchInput" placeholder="Search for products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+    </header>
+
+    <main>
+        
+        
+        <div>
+            <h2 id="formHeading">Add New Product</h2>
+            <form id="productForm">
+                <input type="hidden" id="productId" value="">
+                <input type="text" id="productName" placeholder="Product Name" required>
+                <input type="number" id="productPrice" placeholder="Price" required>
+                <input type="number" id="productQuantity" placeholder="Quantity" required>
+                <button type="submit" id="submitBtn">Add Product</button>
+            </form>
+        </div>
+
+
+        <section id="products">
+            <!-- Product listings will be dynamically populated here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Call us at 0111 234 567.</p>
+    </footer>
+
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
